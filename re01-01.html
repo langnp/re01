@@ -5,35 +5,69 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>(,,´•ω•)ノ么么喵的奇妙小网站</title>
+
   <style>
     body {
       margin: 0;
+      position: relative;
+    }
+
+    #weibu {
+      background-color: #46a3;
+      text-align: center;
+      padding: 40px;
+      font-size: 12px;
+    }
+
+    #shizhong {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 8px 12px;
+      border-radius: 10px;
+      font-family: "微软雅黑", sans-serif;
+      font-size: 14px;
+      color: #333;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+    }
+
+    #tou {
+      background-color: #46a3;
+      text-align: center;
+      padding: 40px;
+    }
+
+    #tou2 {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 15px;
+      line-height: 1.4;
+
     }
   </style>
+  <!--
+  #weibu:尾部
+  #shizhong：时钟格式
+  #tou:格子1的样子格式
+  #tou2格子2的样子格式
+  -->
 </head>
 
 <body>
-
-
-  <div style="
-    background-color:#46a3;
-    text-align:center;
-    padding: 40px;
-    ">
+  <!--添加时钟样式-->
+  <div id="shizhong">--:--:--</div>
+  <!--格子1-->
+  <div id="tou">
     <img src="https://i.imgs.ovh/2026/02/06/y4XlUm.jpeg" alt="温迪喵" width="65px" height="65px">
   </div>
 
 
-  <div style="
-    max-width:700px;
-    margin: 30px auto;
-    padding: 15px;
-    line-height: 1.4;
-
-    ">
-    <p style="
-      text-align:center;
-      font-family:  " 微软雅黑 " sans-serif; >
+  <!--格子2-->
+  <div id="tou2">
+    <p style=" text-align: center;">
 
       &#x1F607; 纪念我的第一个网页 &#x1F607;
 
@@ -41,8 +75,8 @@
     <hr>
 
     <p>
-      新的一年我决定祝我自己<font color=" #FF0000">大红</font>
-      <font color="6f00d2">大紫</font>哒！！！！
+      新的一年我决定祝我自己<font color="#FF0000">大红</font>
+      <font color="#6f00d2">大紫</font>~耶（＾－＾）！！！！
     </p>
     <p>
       为表示我的兴奋，我决定加入
@@ -53,7 +87,7 @@
       <tt>打印机字体</tt> 并
       <u>加上下划线</u> 和
       <strike>删除线</strike>
-      ，为了感谢我的努力我觉得让我的字体
+      ，为了感谢我的努力我可以让我的字体
       <sup>上窜</sup>
       <sub>下跳</sub> 一下。
     </p>
@@ -83,28 +117,44 @@
     </div>
 
     <a href="https://www.bilibili.com/" target="_blank" rel="noopener noreferrer">
-      <font color="#97cbff"> bilibili~ </font>
+      <font color="#FFB6C1"> bilibili~ </font>
     </a>
     <div class="search-container">
       <form action="https://www.bilibili.com/" method="get" target="_blank" rel="noopener noreferrer">
         <input type="text" name="wd" class="search-box" placeholder="23333~~~" required>
       </form>
     </div>
+  </div>
 
+  <!--尾部-->
 
+  <div id="weibu">
+    <p> 个人网页 </p>
+    <p>
+      <font color="#FF00FF">——————————感谢名单——————————</font>
+    </p>
+    <a href="https://space.bilibili.com/34786453?spm_id_from=333.788.upinfo.head.click" target="_blank"
+      rel="noopener noreferrer">
+      bilibili康文昌
+    </a>
+    <a href="https://www.runoob.com/" target="_blank" rel="noopener noreferrer"> 菜鸟教程
+    </a>
+  </div>
 
-    <div style="
-    background-color:#46a3;
-    text-align:center;
-    padding: 40px;
-    font-size: 12px;
-    ">
-      <p> 个人网页 </p>
-      <a href="https: //space.bilibili.com/34786453?spm_id_from=333.788.upinfo.head.click">
-        老师的链接
-        </a>
+  <script> //时钟的逻辑
 
+    function updateClock() {
+      const now = new Date();
+      const hours = String(now.getHours()).padStart(2, '0');
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const seconds = String(now.getSeconds()).padStart(2, '0');
+      document.getElementById('shizhong').textContent = `${hours}:${minutes}:${seconds}`;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
 </body>
 
-
 </html>
+
