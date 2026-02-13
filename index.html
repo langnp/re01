@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatidle" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>么么喵的练习页</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #b9b9b95d;
+        }
+
+        /* * {
+            border: 2px solid black;
+        } */
+        .yinying {
+            box-shadow: rgba(97, 38, 38, 0.1) 0px 4px 12px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .baise {
+            background-color: rgba(245, 245, 245, 0.785)
+        }
+
+        .fense {
+            background-color: rgb(233, 173, 220);
+        }
+
+        .fense2 {
+            background-color: #f899eba4;
+        }
+
+        .danlanse {
+            background-color: #70dcf7d7;
+        }
+
+        .txhz1 {
+            flex: 1;
+        }
+
+        .lie {
+            flex-direction: column;
+        }
+
+        .mg8 {
+            margin: 8px;
+        }
+
+        .mgr8 {
+            margin-right: 8px;
+        }
+
+        .mgt8 {
+            margin-top: 8px;
+        }
+
+        #a {
+            padding: 10px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-bottom: 1px solid #999;
+
+        }
+
+        .daohang {
+            padding: 10px 20px;
+            border-bottom: 5px solid rgba(131, 203, 221, 0.731);
+            font-size: 14px;
+            color: #000000;
+            text-align: center;
+        }
+
+        .daohang2 {
+            border-top: 5px solid rgba(131, 203, 221, 0.612);
+            ;
+        }
+
+        .juzhong {
+            text-align: center;
+
+        }
+
+        /* 当屏幕小于600px时要改变的css */
+        @media (max-width:600px) {
+            .xiaoshi {
+                display: none;
+            }
+
+            .neironglan {
+                flex-direction: column;
+            }
+
+            .shujulan {
+                flex-direction: column;
+            }
+
+            .youqu {
+                margin-left: 8px;
+            }
+
+            .shujukuai {
+                margin: 0 0 8px;
+                flex: auto;
+            }
+
+        }
+    </style>
+    <!--
+    .flex:弹性布局
+    .juzhong:文本居中
+    .yinyng:阴影
+    .baise:背景颜色白色
+    .fense:背景颜色粉色
+    .fense2:背景颜色浅粉色
+    .danlaise:背景颜色淡蓝色
+    .txhz1:弹性盒子1
+    .lie：竖向结构(列)
+    .mg8:上下左右外边距为8px
+    .mgr8:右边距为8px
+    #a:id内容=盒子内容样式
+    .daohang:填充 和 下部阴影 和 字体居中
+    .daohang2:上部阴影 和 颜色
+    当屏幕小于600px时
+    .xiaoshi:消失
+    .neironglan和shujulan:竖向
+    .youqu=右区:左外边距为8px
+    .shujukuai=数据块:边距和和占据
+    -->
+</head>
+<!--身体设置为弹性盒子-->
+
+<body class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px; z-index: 2;" class="fense2 yinying xiaoshi">
+        <!--头像栏-->
+        <div id="a" class="flex fense">
+            <img src="https://i.imgs.ovh/2026/02/06/y4XlUm.jpeg" alt="温迪喵" width="65px" height="65px">
+            <div style="margin-left: 5px;">么么喵的奇妙小网站</div>
+        </div>
+        <!--导航栏-->
+        <div class="txhz1">
+            <div class="yinying daohang daohang2"><a href="C:\Users\Administrator\Desktop\部署总\分1\re01-01.html"
+                    target="_blank" rel="noopener noreferrer">
+                    <font color="#000000">喵的第一个妙妙小网页</font>
+                </a></div>
+            <div class="yinying daohang">导航</div>
+
+            <div class="yinying daohang">导航</div>
+            <div class="yinying daohang">导航</div>
+        </div>
+
+
+    </div>
+    <!--主体区域-->
+    <div class="txhz1 flex lie">
+        <!--头部栏-->
+        <div style="height: 60px; z-index: 1;" class="danlanse yinying juzhong">112233</div>
+        <!--内容区-->
+        <div style="overflow: auto; text-align: center " class="txhz1 flex neironglan">
+            <!--左区-->
+            <div style="flex: 3;" class="flex lie mg8">
+                <!--数据区-->
+                <div class="flex shujulan">
+                    <!-- 块1 -->
+                    <div style="height: 100px;" class="shujukuai txhz1  baise mgr8 yinying">块1</div>
+                    <!-- 块2 -->
+                    <div style="height: 100px;" class="shujukuai txhz1  baise mgr8 yinying">块2</div>
+                    <!-- 块3 -->
+                    <div style="height: 100px;" class="shujukuai txhz1  baise mgr8 yinying">块3</div>
+                    <!-- 块4 -->
+                    <div style="height: 100px;" class="shujukuai txhz1  baise  yinying">块4</div>
+                </div>
+                <!--列表区-->
+                <div class="flex lie">
+                    <!--列表项-->
+                    <div style="height: 160px; " class="baise mgt8 yinying"></div>
+                    <div style="height: 160px; " class="baise mgt8 yinying"></div>
+                    <div style="height: 160px; " class="baise mgt8 yinying"></div>
+                    <div style="height: 160px; " class="baise mgt8 yinying"></div>
+                    <div style="height: 160px; " class="baise mgt8 yinying"></div>
+                    <div style="height: 160px; " class="baise mgt8 yinying"></div>
+                    <div style="height: 160px; " class="baise mgt8 yinying"></div>
+                </div>
+            </div>
+            <!--右区-->
+            <div style="flex: 1;" class="flex lie mg8 mgr8 mgt8 youqu ">
+                <!--提示区-->
+                <div style="height: 150px;" class="baise yinying"></div>
+                <!--消息区-->
+                <div style="height: 300px;" class="baise mgt8 yinying"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
