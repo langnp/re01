@@ -1,0 +1,323 @@
+/* 页面设置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    padding-top: 70px; 
+     background: linear-gradient(180deg, #ffffffc0, #ffd2d2c0);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+/* 阴影 */
+.yinying {
+            width: 200px;
+            height: 150px;
+            background-color: white;
+            border-radius: 8px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.3s ease;
+        }
+        .yinying:hover {
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);}
+
+
+/* 头部栏 */
+.tou {
+    background-color: rgba(249, 248, 248, 0.683);
+    border: 1px solid rgba(118, 118, 118, 0.368);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px ;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    height: 70px;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+.log-yangshi {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid rgba(74, 74, 74, 0.541);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    white-space: nowrap;
+}
+.dhl-wenzi-kuai{
+ display: flex;
+    flex: 1;
+    overflow: hidden;
+    justify-content: center;
+
+}
+.dhl-wenzi{
+     color: rgb(243, 177, 245);
+    margin: 0;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dhl-caidan-ul {
+  display: flex;
+    list-style: none;
+    gap: 10px;
+    flex-wrap: wrap;
+    min-width: 200px;
+    justify-content: flex-end;
+}
+
+.anniu-yangshi {
+    padding: 5px 7px;
+    border: 1px solid rgba(161, 224, 249, 0.82);
+    background: rgba(255, 255, 255, 0.733);
+    text-decoration: none;
+    border-radius: 8px;
+    color: rgb(66, 66, 66);
+}
+
+.anniu-yangshi:hover {
+    background: rgba(155, 195, 216, 0.185);
+}
+/* 开屏盒子 */
+.kaiping-shouye {
+    width: 100vw;
+    height: calc(100vh - 75px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+.shouye-neirong {
+    max-width: 600px;
+}
+.shouye-biaoti {
+    font-size: 48px;
+    color: #291a1f38;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.shouye-jieshao {
+    font-size: 20px;
+    color: #7d4113;
+    margin-bottom: 40px;
+}
+.shouye-anniu {
+    padding: 12px 30px;
+    background: #f87171;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(248, 113, 113, 0.2);}
+    .shouye-anniu:hover {
+    background: #ff4141;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(248, 113, 113, 0.3);}
+/* 内容整体 */
+.hua-hz{
+width: 100vw;
+height: 30vh;
+background: #f8f8f893;
+display: flex;
+justify-content: center;
+}
+.hezi-hua{
+width: 30vw;
+height: 29vh;
+background: #9bd3d369;
+display: flex;
+justify-content: center;
+border-radius: 50px;
+ padding: 7px;
+margin: 5px ;
+align-items: center;
+flex-direction: column;
+overflow-wrap: break-word;
+
+}
+.hezi-hua-nr{
+
+display: flex;
+border-radius: 50px;
+ padding: 7px;
+margin: 20px 20px;
+align-items: center;
+overflow-wrap: break-word;
+}
+.hz-nr{
+background: #fefefe93;
+
+    width: 100vw;
+    height:100vh;      
+    
+    display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            align-content: space-between; 
+            padding: 50px;
+overflow-wrap: break-word;
+            margin: 5px 5px;
+
+
+}
+.hz-nr-nr{
+    width: calc(50% - 20px);
+            height: calc(40% - 20px); 
+            background-color: #9e9c9d8a;
+            border: 1px solid #ffffff45;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-wrap: break-word;
+
+}
+/* 底部栏 */
+.dibu{
+
+    text-align: center;
+    padding: 20px 0;
+    color: #03e5f5;
+    font-size: 14px;
+    background: rgba(7, 1, 1, 0.81);
+    position: fixed; 
+    left: 0; 
+     bottom: 0;    
+    width: 100%;  
+    height: 60px; 
+   
+}
+/* 一些盒子的样式 */
+.hezi-ys{ width: 100%;
+            height: 180px;
+            border-radius: 12px; 
+            padding: 20px;
+            box-sizing: border-box;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease; 
+
+}
+.hezi-ys2{
+            width: 45%;
+            height: 180px;
+            border-radius: 12px; 
+
+}
+/* 渐变 */
+        .hezi-ys-1 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 6px 25px rgba(102, 126, 234, 0.4);
+        }
+
+    /* 柔和 */
+      .hezi-ys-2 {
+            background: #fff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        .hezi-ys-2:hover {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            transform: translateY(-5px); }
+
+    /* 普通的 */
+    .hezi-ys-3{
+        width: 100vw;
+            height: 30vh;
+            border: 1px solid #ccc;
+            background: #f8f8f8;
+            box-sizing: border-box; 
+    }
+/* 测试盒子 */
+/* .ceshi1 {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(248, 3, 3);
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.ceshi2 {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(77, 248, 3);
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+} */
+/* 致谢页用 */
+.gxlb-ul{
+  display: flex;
+    list-style: none;
+    gap: 10px;
+    flex-wrap: wrap;
+    min-width: 20px;
+    justify-content: flex-end;
+}
+.gxlb-ul-li{
+ padding: 5px 7px;
+    border: 1px solid rgba(20, 21, 21, 0.82);
+    background: rgba(244, 218, 218, 0.733);
+    text-decoration: none;
+    border-radius: 8px;
+    color: rgb(5, 5, 5);
+    align-items: center;
+    display: inline-flex
+
+} 
+ .zx-tp{
+       
+        align-items: center;
+        width: 24px; 
+            height: 24px; 
+            object-fit: contain; 
+
+    }
+ /* 铺垫盒子 */
+ .pudian {
+    width: 100vw;
+    height: 40vh;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;}
+  
+
+ @media (max-width:600px) {
+            
+            .biandong {
+                margin: 0 0 8px;
+                flex: auto;
+            }
+
+        }
